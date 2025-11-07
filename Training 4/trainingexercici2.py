@@ -1,11 +1,14 @@
-Qualificació = [0,1,2,3,4,5,6,7,8,9,10,-1]
-for Nota in Qualificació:
-    if Nota > -1:
-         print(Nota)
-    if Nota == -1:
-        print(Nota)
-        break #Lleva el bucle
-if max(Qualificació) == 10:
-    print("Hi ha hagut alguna nota que te un 10.")
+nota10 = False
+
+while True:
+    nota = int(input("Introdueix una nota (0-10) o -1 per acabar: "))
+    if nota == -1:
+        break
+    if nota == 10:
+        nota10 = True
+
+if nota10:
+    print("Hi ha hagut alguna nota que té un 10")
 else:
-    print("No hi ha cap 10.")
+    print("No hi ha cap 10")
+
