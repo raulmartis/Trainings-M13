@@ -1,8 +1,5 @@
-print("Realitza un programa que mostri tots els nombres parells que hi ha entre 1 i 200 utilitzant while")
-num = 2
-while num <= 200:
-   print(num)
-num += 2
-
-
- 
+for i in range(1,200): # Imprimeix els nombres parells entre 1 i 200
+    if i % 2 == 0: # Comprova si el nombre és parell
+        print(i) # Imprimeix el nombre parell
+        
+    
