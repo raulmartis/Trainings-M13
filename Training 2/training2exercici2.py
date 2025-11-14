@@ -1,4 +1,4 @@
-def main():
+def operacions():
     print("Anem a calcular la multiplicació, divisió i resta de dos nombres enters")
     num1 = int(input("Introdueix el primer nombre enter: ")) # Aquí el que estem fent és crear un input per a que l'usuari introdueixi el primer nombre enter
     num2 = int(input("Introdueix el segon nombre enter: ")) # Aquí el mateix per al segon número enter
@@ -11,4 +11,5 @@ def main():
     print("La divisió és:", divisio) # El mateix per a la divisió
     print("La resta és:", resta) # I finalment per a la resta
 if __name__ == "__main__":
-    main()
+    operacions()
+    
