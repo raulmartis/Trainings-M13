@@ -96,55 +96,57 @@ def comprovació():
             print("No hi ha cap 10") # Imprimeix el missatge corresponent
 
 while True:
-    print("1. Calcula l'àrea d'un quadrat") 
-    print("2. Realitza operacions bàsiques amb dos nombres enters")
-    print("3. Crea una frase amb tres paraules")
-    print("4. Fes casting de float a int")
-    print("5. Comprova si ets major o menor d'edat")
-    print("6. Troba el nombre major entre tres nombres")
-    print("7. Comprova si un nombre és positiu o negatiu")
-    print("8. Imprimeix els nombres parells entre 1 i 200")
-    print("9. Comprova si hi ha algun nombre negatiu entre 10 nombres")
-    print("10. Comprova si hi ha alguna nota 10")
-    print("S. Sortir")
-    opcio=input("Selecciona una opció: ")
-    match opcio:
-        case "1":
-            area()
-            sleep(3)
-        case "2":
-            operacions()
-            sleep(3)
-        case "3":
-            frase()
-            sleep(3)
-        case "4":
-            casting()
-            sleep(3)
-        case "5":
-            edats()
-            sleep(3)
-        case "6":
-            numeros()
-            sleep(3)
-        case "7":
-            positiuonegatiu()
-            sleep(3)
-        case "8":
-            imprimirnumeros()
+    print("1. Calcula l'àrea d'un quadrat") #Mostra el menú d'opcions a l'usuari
+    print("2. Realitza operacions bàsiques amb dos nombres enters") #Mostra el menú d'opcions a l'usuari
+    print("3. Crea una frase amb tres paraules") #Mostra el menú d'opcions a l'usuari
+    print("4. Fes casting de float a int") #Mostra el menú d'opcions a l'usuari
+    print("5. Comprova si ets major o menor d'edat") #Mostra el menú d'opcions a l'usuari
+    print("6. Troba el nombre major entre tres nombres") #Mostra el menú d'opcions a l'usuari
+    print("7. Comprova si un nombre és positiu o negatiu") #Mostra el menú d'opcions a l'usuari
+    print("8. Imprimeix els nombres parells entre 1 i 200") #Mostra el menú d'opcions a l'usuari
+    print("9. Comprova si hi ha algun nombre negatiu entre 10 nombres") #Mostra el menú d'opcions a l'usuari
+    print("10. Comprova si hi ha alguna nota 10") #Mostra el menú d'opcions a l'usuari
+    print("S. Sortir") #Mostra el menú d'opcions a l'usuari
+    opcio=input("Selecciona una opció: ") # Demana a l'usuari que seleccioni una opció del menú
+    match opcio: # Utilitza una estructura de control "match-case" per gestionar les diferents opcions seleccionades per l'usuari
+        case "1": # Crida la funció "area" si l'usuari selecciona l'opció 1
+            area() # Crida la funció "area"
+            sleep(3) # Pausa de 3 segons abans de tornar al menú principal
+        case "2": # Crida la funció "operacions" si l'usuari selecciona l'opció 2
+            operacions() # Crida la funció "operacions"
+            sleep(3) # Pausa de 3 segons abans de tornar al menú principal
+        case "3": # Crida la funció "frase" si l'usuari selecciona l'opció 3
+            frase() # Crida la funció "frase"
+            sleep(3) # Pausa de 3 segons abans de tornar al menú principal
+        case "4": # Crida la funció "casting" si l'usuari selecciona l'opció 4
+            casting() # Crida la funció "casting"
+            sleep(3) # Pausa de 3 segons abans de tornar al menú principal
+        case "5": # Crida la funció "edats" si l'usuari selecciona l'opció 5
+            edats() # Crida la funció "edats"
+            sleep(3) # Pausa de 3 segons abans de tornar al menú principal
+        case "6": # Crida la funció "numeros" si l'usuari selecciona l'opció 6
+            numeros() # Crida la funció "numeros"
+            sleep(3) # Pausa de 3 segons abans de tornar al menú principal
+
+        case "7": # Crida la funció "positiuonegatiu" si l'usuari selecciona l'opció 7
+            positiuonegatiu() # Crida la funció "positiuonegatiu"
+            sleep(3) # Pausa de 3 segons abans de tornar al menú principal
+        case "8": # Crida la funció "imprimirnumeros" si l'usuari selecciona l'opció 8
+            imprimirnumeros() # Crida la funció "imprimirnumeros"
             sleep(3)
         case "9":
-            nombrenegatiu()
-            sleep(3)
-        case "10":
-            comprovació()
-            sleep(3)
-        case "S" | "s":
-            print("Sortint del programa...")
-            break
+            nombrenegatiu() # Crida la funció "nombrenegatiu"
+            sleep(3) # Pausa de 3 segons abans de tornar al menú principal
+        case "10": 
+            comprovació() # Crida la funció "comprovació"
+            sleep(3) # Pausa de 3 segons abans de tornar al menú principal
+        case "S" | "s": # Si l'usuari selecciona "S" o "s", surt del programa
+            print("Sortint del programa...") # Missatge de sortida
+            break # Surt del bucle i finalitza el programa
         case _:
-            print("Opció no vàlida. Si us plau, selecciona una opció vàlida.")
-            sleep(3)
+            print("Opció no vàlida. Si us plau, selecciona una opció vàlida.") # Missatge d'error per a opcions no vàlides
+            sleep(3) # Pausa de 3 segons abans de tornar al menú principal
+            
 
 
             
