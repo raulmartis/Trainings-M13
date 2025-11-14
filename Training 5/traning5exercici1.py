@@ -144,5 +144,7 @@ while True:
             break
         case _:
             print("Opció no vàlida. Si us plau, selecciona una opció vàlida.")
+            sleep(3)
+
 
             
